@@ -14,27 +14,28 @@
         <h1>Would you like to make a new entry?</h1>
         <div class="nav-bar">
             <input type="checkbox" id="theme"> Dark Mode</input><!--clickable element that toggles light/dark-->
-            <button class="back-button">Old Posts</button><!--links to blog posts (blog.html)-->
+            <button class="button" id="back-button">Old Posts</button><!--links to blog posts (blog.html)-->
         </div>
     </header>
     <section class="container">
         <hr class="full-break">
         <form class="whole-form"> <!--Form content-->
             <label for="user">Name:</label>
-            <input type="text" id="user" name="userName" placeholder="  Name"><!--Fillable for name to be read by js-->
+            <input type="text" class="tbox" id="user" name="userName" placeholder="  Name"><!--Fillable for name to be read by js-->
             <hr><!--visible linebreak-->
             <label for="title">Post Title:</label>
             <br><!--invisible line break-->
-            <input type="text" id="title" name="title" placeholder="   Title"><!--Fillable for post title to be read by js-->
+            <input type="text" class="tbox" id="title" name="title" placeholder="   Title"><!--Fillable for post title to be read by js-->
             <hr>
             <label for="content">Post Content</label>
             <br>
-            <textarea id="content" name="content" placeholder="   Put your post content here"></textarea><!--Fillable for text content to be read by js-->
+            <textarea class="tbox" id="content" name="content" placeholder="   Put your post content here"></textarea><!--Fillable for text content to be read by js-->
             <hr class="full-break">
-            <button type="submit">Submit</button>
+            <button class="button" type="submit">Submit</button>
         </form>
     </section>
     <script src="assets/js/form.js"></script>
+    <script src="assets/js/logic.js"></script><!--links js that converts light/dark mode-->
 </body>
 
 </html>
