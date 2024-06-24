@@ -13,4 +13,4 @@ SO THAT I can showcase my thoughts and experiences
 
 
 # Application
-You can access the webpage by clicking <a https://maxlc00.github.io/Personal-Blog/>here</a>.
+You can access the webpage by clicking <a href=https://maxlc00.github.io/Personal-Blog/>here</a>.
