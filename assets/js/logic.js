@@ -13,10 +13,10 @@ themeSwitcher.addEventListener('click', function() {
         theme = 'dark'; //toggles page theme
         console.log("mode is dark");
         bodyEl.setAttribute('style', 'background-color: rgb(0, 0, 73); color: white;');
-        for (let i = 0; buttonEl.length; i++) {
-            buttonEl[i].setAttribute(
+        for (let i = 0; buttonEl.length; i++) { //moves through the array of buttons
+            buttonEl[i].setAttribute( // sets style attribute to each element in the array
                 'style', 
-                'background-color: rgb(200, 223, 253); color: black;');
+                'background-color: rgb(206, 224, 248); color: black;');
             textboxEl[i].setAttribute(
                 'style', 
                 'background-color: rgb(210, 210, 210);');
@@ -25,7 +25,7 @@ themeSwitcher.addEventListener('click', function() {
     } else { // if theme is not light (aka dark) runs instead
         theme = 'light'; // toggles page theme
         console.log("mode is light");
-        bodyEl.setAttribute('style', 'background-color: rgb(200, 223, 253); color: black;');
+        bodyEl.setAttribute('style', 'background-color: rgb(206, 224, 248); color: black;');
         for (let i = 0; buttonEl.length; i++) {
             buttonEl[i].setAttribute(
                 'style', 
