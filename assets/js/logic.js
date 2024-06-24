@@ -1,16 +1,16 @@
-const themeSwitcher = document.getElementById('theme');
-const buttonEl = document.querySelectorAll('.button');
-const textboxEl = document.querySelectorAll('.tbox');
-const bodyEl = document.body;
+const themeSwitcher = document.getElementById('theme'); // targets the dark mode toggle button
+const buttonEl = document.querySelectorAll('.button'); //selects only button class elements and creates array of them
+const textboxEl = document.querySelectorAll('.tbox'); //selects only textbox class elements and creates array of them
+const bodyEl = document.body; //selects the body and its children
 
 console.log(buttonEl);
 console.log(textboxEl);
 
-let theme = 'light';
+let theme = 'light'; //defines a 'theme' to the page to mark whether page is light or dark mode, starting in light
 
 themeSwitcher.addEventListener('click', function() {
-    if (theme === 'light') {
-        theme = 'dark';
+    if (theme === 'light') { //checks pages theme, runs if the theme is light
+        theme = 'dark'; //toggles page theme
         console.log("mode is dark");
         bodyEl.setAttribute('style', 'background-color: rgb(0, 0, 73); color: white;');
         for (let i = 0; buttonEl.length; i++) {
@@ -21,8 +21,9 @@ themeSwitcher.addEventListener('click', function() {
                 'style', 
                 'background-color: rgb(210, 210, 210);');
         }
-    } else {
-        theme = 'light';
+         //switches background to dark and elements to corresponding variants
+    } else { // if theme is not light (aka dark) runs instead
+        theme = 'light'; // toggles page theme
         console.log("mode is light");
         bodyEl.setAttribute('style', 'background-color: rgb(200, 223, 253); color: black;');
         for (let i = 0; buttonEl.length; i++) {
@@ -33,5 +34,6 @@ themeSwitcher.addEventListener('click', function() {
                 'style', 
                 'background-color: white;');
         }
+         //switches background to light and elements to corresponding variants
     }
 });
